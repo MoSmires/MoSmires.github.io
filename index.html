@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Smirès | Architecte Systèmes & Spécialiste IA — MBSE & Computer Vision</title>
+  
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description" content="Portfolio professionnel de Mohammed Smirès, Ingénieur ENSEIRB-MATMECA & Spécialiste IA certifié CNAM. +10 ans d'expérience industrielle dans les secteurs de la défense, du ferroviaire et de l'automobile.">
+  <meta name="author" content="Mohammed Smirès">
+  <meta property="og:title" content="Mohammed Smirès | Architecte Systèmes Complexes & IA">
+  <meta property="og:description" content="Découvrez mes réalisations en modélisation MBSE (Arcadia/Capella) et en Intelligence Artificielle appliquée (YOLOv8, DeepSORT, cGAN Pix2Pix).">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon SVG Dynamique -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230ea5e9%22/><text y=%2265%22 font-size=%2250%22 font-family=%22sans-serif%22 font-weight=%22bold%22 x=%2250%22 text-anchor=%22middle%22 fill=%22%23ffffff%22>MS</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. EN-TÊTE FIXE (STICKY NAVBAR)
+       ======================================================================== -->
+  <header class="ms-navbar">
+    <div class="ms-nav-container">
+      <a href="#accueil" class="ms-logo">
+        <div class="ms-logo-badge">MS</div>
+        <span>Mohammed Smirès</span>
+      </a>
+
+      <nav>
+        <ul class="ms-nav-links">
+          <li><a href="#accueil" class="active">Accueil</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#projets-ia">Projets IA</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="assets/docs/CV_Mohammed_Smires.pdf" class="ms-btn ms-btn-secondary" style="padding: 8px 18px; font-size: 0.85rem;" target="_blank" rel="noopener noreferrer">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              CV (PDF)
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="ms-burger" aria-label="Menu Mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. HERO SECTION
+       ======================================================================== -->
+  <section id="accueil" class="ms-hero">
+    <div class="ms-container">
+      <div class="ms-badge">
+        <span class="ms-badge-pulse"></span> Architecte Systèmes Complexes & Spécialiste IA
+      </div>
+      
+      <h1 class="ms-hero-title">
+        Concevoir des architectures critiques.<br>
+        <span class="ms-text-gradient">Déployer l'IA de haute précision.</span>
+      </h1>
+
+      <p class="ms-hero-lead">
+        Ingénieur diplômé <strong>ENSEIRB-MATMECA</strong> fort de plus de 10 ans d'expérience industrielle (Défense, Ferroviaire, et Automobile) et certifié en Intelligence Artificielle au <strong>CNAM Paris</strong>. J'unifie la rigueur méthodologique du MBSE et la puissance de l'intelligence artificielle'.
+      </p>
+
+      <div class="ms-btn-group">
+        <a href="#projets-ia" class="ms-btn ms-btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+          Explorer les Projets IA
+        </a>
+        <a href="#parcours" class="ms-btn ms-btn-secondary">Consulter le Parcours Industriel</a>
+        <a href="assets/docs/CV_Mohammed_Smires.pdf" class="ms-btn ms-btn-secondary" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Télécharger le CV complet
+        </a>
+      </div>
+
+      <!-- BANNIÈRE CHIFFRES CLÉS / KPIS -->
+      <div class="ms-kpi-grid">
+        <div class="ms-kpi-card">
+          <div class="ms-kpi-value">10+ Ans</div>
+          <div class="ms-kpi-label">Ingénierie Systèmes Industriels</div>
+        </div>
+        <div class="ms-kpi-card">
+          <div class="ms-kpi-value">+41%</div>
+          <div class="ms-kpi-label">Gain MOTA sur Benchmark MOT20</div>
+        </div>
+        <div class="ms-kpi-card">
+          <div class="ms-kpi-value">100%</div>
+          <div class="ms-kpi-label">Conformité & Traçabilité MBSE</div>
+        </div>
+        <div class="ms-kpi-card">
+          <div class="ms-kpi-value">3</div>
+          <div class="ms-kpi-label">Langues de Travail (FR, EN, PT)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. SECTION EXPERTISE (BENTO GRID)
+       ======================================================================== -->
+  <section id="expertise" class="ms-section" style="background: rgba(11, 19, 41, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="ms-container">
+      <div class="ms-badge">Double Compétence Rare</div>
+      <h2 class="ms-section-title">L'Alliance Systèmes Complexes & IA</h2>
+      <p class="ms-section-subtitle">
+        Une réponse éprouvée aux programmes technologiques critiques : garantir que des algorithmes modernes de deep learning s'intègrent dans un cadre systémique rigoureux, traçable et certifiable.
+      </p>
+
+      <div class="ms-bento-grid">
+        <!-- Bento 1 : MBSE & Architecture Systèmes -->
+        <div class="ms-bento-item ms-col-8">
+          <div style="color: var(--accent-cyan); font-family: var(--font-code); font-size: 0.85rem; font-weight: 700; margin-bottom: 10px;">INGÉNIERIE FORMELLE</div>
+          <h3 style="font-size: 1.6rem; margin-bottom: 14px;">Architecture Systèmes & MBSE</h3>
+          <p style="color: #cbd5e1; font-size: 1rem;">
+            Structuration complète d'architectures systèmes complexes selon la méthode <strong>Arcadia / Capella</strong>. Définition, allocation et traçabilité des exigences opérationnelles, fonctionnelles et de sûreté sous <strong>DOORS</strong>. Gestion de la variabilité produit pour grands comptes industriels.
+          </p>
+          <div class="ms-tag-list" style="margin-top: 18px;">
+            <span class="ms-tag">Arcadia</span>
+            <span class="ms-tag">Capella</span>
+            <span class="ms-tag">DOORS</span>
+            <span class="ms-tag">Variabilité Produit</span>
+            <span class="ms-tag">Ingénierie des Exigences</span>
+          </div>
+        </div>
+
+        <!-- Bento 2 : Logiciel Embarqué & Validation -->
+        <div class="ms-bento-item ms-col-4">
+          <div style="color: var(--accent-indigo); font-family: var(--font-code); font-size: 0.85rem; font-weight: 700; margin-bottom: 10px;">TEMPS RÉEL & CODE</div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Embarqué & Automatisation</h3>
+          <p style="color: #cbd5e1; font-size: 0.95rem;">
+            Développement de frameworks de test en C++ et Python. Systèmes de protection ferroviaire (ATP), algorithmes contrôle moteur et bancs de test HIL.
+          </p>
+          <div class="ms-tag-list" style="margin-top: 18px;">
+            <span class="ms-tag">Simulink</span>
+            <span class="ms-tag">Python</span>
+            <span class="ms-tag">Bancs HIL</span>
+            <span class="ms-tag">C/C++</span>
+          </div>
+        </div>
+
+        <!-- Bento 3 : IA & Computer Vision -->
+        <div class="ms-bento-item ms-col-12">
+          <div style="color: var(--accent-emerald); font-family: var(--font-code); font-size: 0.85rem; font-weight: 700; margin-bottom: 10px;">INTELLIGENCE ARTIFICIELLE APPLIQUÉE</div>
+          <h3 style="font-size: 1.6rem; margin-bottom: 14px;">Vision par Ordinateur & Modèles Génératifs (cGAN)</h3>
+          <p style="color: #cbd5e1; font-size: 1rem;">
+            Spécialisé dans la calibration, l'entraînement et l'optimisation de réseaux neuronaux profonds pour des environnements exigeants. Expertise validée au CNAM en détection/suivi multi-objets temps réel (YOLOv8 + DeepSORT sur MOT20) et traduction d'image-à-image (Pix2Pix conditionnel, LSGAN, projection dans l'espace colorimétrique Lab, inpainting et restauration).
+          </p>
+          <div class="ms-tag-list" style="margin-top: 18px;">
+            <span class="ms-tag">Deep Learning</span>
+            <span class="ms-tag">PyTorch</span>
+            <span class="ms-tag">YOLOv8</span>
+            <span class="ms-tag">DeepSORT</span>
+            <span class="ms-tag">cGAN Pix2Pix</span>
+            <span class="ms-tag">LSGAN Inpainting</span>
+            <span class="ms-tag">Espace Lab</span>
+            <span class="ms-tag">Équilibre de Nash</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. SECTION PROJETS IA (FORMAT RECRUTEUR)
+       ======================================================================== -->
+  <section id="projets-ia" class="ms-section">
+    <div class="ms-container">
+      <div class="ms-badge">Travaux de Recherche & Développement (CNAM)</div>
+      <h2 class="ms-section-title">Études de Cas en Intelligence Artificielle</h2>
+      <p class="ms-section-subtitle">
+        Projets de recherche appliquée documentés selon le standard d'ingénierie : Problématique, Rôle, Solution déployée et Impact métrique mesurable.
+      </p>
+
+      <!-- Boutons de filtrage dynamique -->
+      <div class="ms-project-filters">
+        <button class="ms-filter-btn active" data-filter="all">Tous les Projets</button>
+        <button class="ms-filter-btn" data-filter="tracking">Tracking & Vidéo (MOT)</button>
+        <button class="ms-filter-btn" data-filter="generative">Modèles Génératifs (cGAN)</button>
+        <button class="ms-filter-btn" data-filter="restoration">Inpainting & Restauration</button>
+        <button class="ms-filter-btn" data-filter="sensors">Signaux & Capteurs (HAR)</button>
+      </div>
+
+      <!-- FICHE PROJET 1 : MOT20 TRACKING -->
+      <article class="ms-project-card" data-category="tracking">
+        <div class="ms-project-header">
+          <div>
+            <h3 class="ms-project-title">Tracking Multi-Objets en Environnement Dense (MOT20)</h3>
+            <div class="ms-project-subtitle">Pipeline Hybride YOLOv8 & DeepSORT avec Ré-Identification Profonde</div>
+          </div>
+          <div class="ms-tag-list">
+            <span class="ms-tag">YOLOv8</span>
+            <span class="ms-tag">DeepSORT</span>
+            <span class="ms-tag">Filtre de Kalman</span>
+            <span class="ms-tag">py-motmetrics</span>
+            <span class="ms-tag">MOT20</span>
+            <span class="ms-tag">PyTorch</span>
+          </div>
+        </div>
+
+        <div class="ms-structured-grid">
+          <!-- 1. Problématique -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              1. Problématique
+            </div>
+            <div class="ms-grid-content">
+              Dans des scènes de foule dense (benchmark MOT20), les modèles pré-entraînés échouent : seulement <strong>10,3% de rappel</strong> et <strong>8,7% de MOTA</strong>. Les occultations fréquentes et les croisements provoquent des commutations et des pertes continues d'identifiants.
+            </div>
+          </div>
+
+          <!-- 2. Rôle -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              2. Rôle & Responsabilité
+            </div>
+            <div class="ms-grid-content">
+              Concepteur et Développeur Principal. Conception intégrale de la chaîne de traitement, protocoles d'entraînement distribué sur GPU, validation statistique normalisée et benchmarking face au leader mondial SOTA (CoNo-Link).
+            </div>
+          </div>
+
+          <!-- 3. Solution -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              3. Solution Technique
+            </div>
+            <div class="ms-grid-content">
+              Couplage YOLOv8 + DeepSORT. Réentraînement complet de YOLO sur <strong>100 époques</strong> avec les annotations MOT20. Calibration fine du seuil de confiance à <strong>0,40</strong> pour équilibrer latence temps réel et élimination des faux positifs.
+            </div>
+          </div>
+
+          <!-- 4. Impact -->
+          <div class="ms-grid-block impact">
+            <div class="ms-grid-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              4. Impact Mesurable
+            </div>
+            <div class="ms-grid-content">
+              <div class="ms-kpi-item"><span class="ms-kpi-num">+41%</span> <span class="ms-kpi-desc">MOTA (12,1% baseline ➔ 53,1%)</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">70%</span> <span class="ms-kpi-desc">Rappel global (vs 27,4%)</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">53,8%</span> <span class="ms-kpi-desc">IDF1 stabilité de suivi (vs 16,9%)</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">89,9%</span> <span class="ms-kpi-desc">Précision (à 3,7% de CoNo-Link)</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- FICHE PROJET 2 : cGAN COLORISATION -->
+      <article class="ms-project-card" data-category="generative">
+        <div class="ms-project-header">
+          <div>
+            <h3 class="ms-project-title">Colorisation d'Images par cGAN (Espace Colorimétrique Lab)</h3>
+            <div class="ms-project-subtitle">Traduction Image-à-Image Conditionnelle (U-Net & PatchGAN)</div>
+          </div>
+          <div class="ms-tag-list">
+            <span class="ms-tag">Pix2Pix (cGAN)</span>
+            <span class="ms-tag">Espace Lab</span>
+            <span class="ms-tag">PatchGAN</span>
+            <span class="ms-tag">Loss Hybride L1</span>
+            <span class="ms-tag">Picsum API</span>
+            <span class="ms-tag">PyTorch</span>
+          </div>
+        </div>
+
+        <div class="ms-structured-grid">
+          <!-- 1. Problématique -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">1. Problématique</div>
+            <div class="ms-grid-content">
+              Coloriser une image N&B est un problème inverse indéterminé. L'emploi d'une perte euclidienne standard L2 génère des moyennes délavées et sépia. L'enjeu est de synthétiser des couleurs plausibles et éclatantes sans artefacts visuels.
+            </div>
+          </div>
+
+          <!-- 2. Rôle -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">2. Rôle & Responsabilité</div>
+            <div class="ms-grid-content">
+              Concepteur de la chaîne de données et du protocole d'apprentissage. Automatisation de l'ingestion d'images, conception du filtre de rejet chromatique et entraînement antagoniste sur 400 époques.
+            </div>
+          </div>
+
+          <!-- 3. Solution -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">3. Solution Technique</div>
+            <div class="ms-grid-content">
+              Transformation RGB ➔ Lab : prédiction des canaux a et b conditionnée par le canal de luminance L. Générateur U-Net avec connexions résiduelles et discriminateur PatchGAN 70x70. Perte pondérée avec <strong>lambda_L1 = 30</strong>.
+            </div>
+          </div>
+
+          <!-- 4. Impact -->
+          <div class="ms-grid-block impact">
+            <div class="ms-grid-label">4. Impact Mesurable</div>
+            <div class="ms-grid-content">
+              <div class="ms-kpi-item"><span class="ms-kpi-num">-33%</span> <span class="ms-kpi-desc">Canaux à prédire via l'espace Lab</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">Ép. 250</span> <span class="ms-kpi-desc">Équilibre de Nash parfait identifié</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">L1 = 1.0</span> <span class="ms-kpi-desc">Convergence stable (zéro mode collapse)</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">100%</span> <span class="ms-kpi-desc">Dataset filtré sans biais monochrome</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- FICHE PROJET 3 : INPAINTING LSGAN -->
+      <article class="ms-project-card" data-category="generative restoration">
+        <div class="ms-project-header">
+          <div>
+            <h3 class="ms-project-title">Restauration & Inpainting d'Images Masquées (LSGAN)</h3>
+            <div class="ms-project-subtitle">Reconstruction Structurelle et Contextuelle par Least Squares GAN</div>
+          </div>
+          <div class="ms-tag-list">
+            <span class="ms-tag">LSGAN</span>
+            <span class="ms-tag">Inpainting</span>
+            <span class="ms-tag">Reconstruction RGB</span>
+            <span class="ms-tag">Vision Industrielle</span>
+            <span class="ms-tag">PyTorch</span>
+          </div>
+        </div>
+
+        <div class="ms-structured-grid">
+          <!-- 1. Problématique -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">1. Problématique</div>
+            <div class="ms-grid-content">
+              La perte de données ou le masquage physique de capteurs altère des zones critiques d'images. Reconstruire ces portions détruites réclame de respecter la continuité géométrique globale et les textures haute fréquence d'arrière-plan.
+            </div>
+          </div>
+
+          <!-- 2. Rôle -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">2. Rôle & Responsabilité</div>
+            <div class="ms-grid-content">
+              Concepteur de l'architecture d'inpainting et du banc d'évaluation comparative. Mise au point du pipeline d'altération synthétique (dataset apparié 512x256) et supervision de la dynamique de convergence L1 vs adverse.
+            </div>
+          </div>
+
+          <!-- 3. Solution -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">3. Solution Technique</div>
+            <div class="ms-grid-content">
+              Adoption de la formulation Least Squares GAN (LSGAN) pour pénaliser les erreurs quadratiques et éliminer les gradients évanescents. Traitement direct en RGB (3 canaux en entrée et sortie) et entraînement sur 400 époques.
+            </div>
+          </div>
+
+          <!-- 4. Impact -->
+          <div class="ms-grid-block impact">
+            <div class="ms-grid-label">4. Impact Mesurable</div>
+            <div class="ms-grid-content">
+              <div class="ms-kpi-item"><span class="ms-kpi-num">150 ép.</span> <span class="ms-kpi-desc">Entrée en régime permanent de G_L1</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">[0.05-0.15]</span> <span class="ms-kpi-desc">Stabilité étroite du Discriminateur</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">0%</span> <span class="ms-kpi-desc">Divergence numérique observée</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">100</span> <span class="ms-kpi-desc">Images de validation restaurées avec succès</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- FICHE PROJET 4 : HAR (HUMAN ACTIVITY RECOGNITION) -->
+      <article class="ms-project-card" data-category="sensors">
+        <div class="ms-project-header">
+          <div>
+            <h3 class="ms-project-title">Reconnaissance d'Activités Humaines (HAR - Capteurs Inertiels)</h3>
+            <div class="ms-project-subtitle">Classification Multiclasse de Signaux par SVM à Noyau & Réseau MLP</div>
+          </div>
+          <div class="ms-tag-list">
+            <span class="ms-tag">Machine Learning</span>
+            <span class="ms-tag">SVM (RBF)</span>
+            <span class="ms-tag">MLP (PyTorch)</span>
+            <span class="ms-tag">Random Forest</span>
+            <span class="ms-tag">Capteurs Inertiels</span>
+            <span class="ms-tag">t-SNE / PCA</span>
+          </div>
+        </div>
+
+        <div class="ms-structured-grid">
+          <!-- 1. Problématique -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              1. Problématique
+            </div>
+            <div class="ms-grid-content">
+              Classifier automatiquement les postures statiques et dynamiques (marcher, monter/descendre des escaliers, assis, debout, couché) à partir de flux continus de signaux accélérométriques et gyroscopiques bruités (vecteur de dimension 561).
+            </div>
+          </div>
+
+          <!-- 2. Rôle -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              2. Rôle & Responsabilité
+            </div>
+            <div class="ms-grid-content">
+              Co-concepteur de l'étude (CNAM RCP-209). Analyse statistique multidimensionnelle, sélection des descripteurs d'importance, implémentation et benchmarking comparatif de 4 familles d'architectures décisionnelles.
+            </div>
+          </div>
+
+          <!-- 3. Solution -->
+          <div class="ms-grid-block">
+            <div class="ms-grid-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              3. Solution Technique
+            </div>
+            <div class="ms-grid-content">
+              Étude comparative rigoureuse : Forêt Aléatoire (Random Forest), Perceptron simple, Perceptron multicouche (MLP) et Séparateurs à Vaste Marge (SVM) à noyau gaussien RBF. Réduction dimensionnelle t-SNE et analyse fine de la matrice de confusion.
+            </div>
+          </div>
+
+          <!-- 4. Impact -->
+          <div class="ms-grid-block impact">
+            <div class="ms-grid-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              4. Impact Mesurable
+            </div>
+            <div class="ms-grid-content">
+              <div class="ms-kpi-item"><span class="ms-kpi-num">95,45%</span> <span class="ms-kpi-desc">Précision globale du modèle SVM</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">100%</span> <span class="ms-kpi-desc">Rappel posture Allongé (537/537)</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">97%</span> <span class="ms-kpi-desc">Score F1 sur l'activité de marche</span></div>
+              <div class="ms-kpi-item"><span class="ms-kpi-num">561</span> <span class="ms-kpi-desc">Descripteurs inertiels exploités</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. SECTION PARCOURS INDUSTRIEL & FORMATION
+       ======================================================================== -->
+  <section id="parcours" class="ms-section" style="background: rgba(11, 19, 41, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="ms-container">
+      <div class="ms-badge">Expériences & Réalisations</div>
+      <h2 class="ms-section-title">10 Ans d'Ingénierie au Cœur de l'Industrie</h2>
+      <p class="ms-section-subtitle">
+        Conception, modélisation MBSE et validation de systèmes complexes dans des environnements exigeants : Défense, Ferroviaire de pointe et Automobile.
+      </p>
+
+      <div class="ms-timeline">
+        <!-- 1. THALES -->
+        <div class="ms-timeline-item">
+          <div class="ms-timeline-dot"></div>
+          <div class="ms-timeline-date">FÉVRIER 2023 — MARS 2026</div>
+          <h3 class="ms-timeline-title">Ingénieur Systèmes & Modélisation MBSE</h3>
+          <div class="ms-timeline-company">Thales — Lisbonne (Portugal) / Cholet (France) / Hengelo (Pays-Bas)</div>
+          <ul class="ms-timeline-duties">
+            <li><strong>Ingénierie Systèmes & Exigences :</strong> Définition, structuration rigoureuse et suivi dynamique des exigences systèmes pour garantir la stricte conformité aux besoins opérationnels complexes.</li>
+            <li><strong>Conception MBSE (Arcadia / Capella) :</strong> Structuration des architectures selon la méthodologie MBSE, garantissant la cohérence globale des modèles physiques/logiques et la traçabilité intégrale.</li>
+            <li><strong>Gestion de Gamme & Variabilité :</strong> Analyse de la variabilité produit et réorganisation du référentiel documentaire technique pour rationaliser la maintenance des déclinaisons clients.</li>
+            <li><strong>Performances Techniques & R&D :</strong> Pilotage de la faisabilité et développements dédiés à l'optimisation des performances de nouveaux designs avec interventions internationales (site Thales Hengelo).</li>
+          </ul>
+        </div>
+
+        <!-- 2. CRITICAL SOFTWARE -->
+        <div class="ms-timeline-item">
+          <div class="ms-timeline-dot"></div>
+          <div class="ms-timeline-date">AOÛT 2021 — FÉVRIER 2023</div>
+          <h3 class="ms-timeline-title">Ingénieur Systèmes Embarqués</h3>
+          <div class="ms-timeline-company">Critical Software — Lisbonne (Portugal) & Site Constructeur CAF (Beasain, Espagne)</div>
+          <ul class="ms-timeline-duties">
+            <li><strong>Projet Matériel Roulant (Trains Oxygène SNCF / CAF) :</strong> Définition des exigences systèmes sur spécifications fonctionnelles pour les sous-systèmes critiques : signalisation ferroviaire, modes de conduite, couplage, communication radio.</li>
+            <li><strong>Protection Automatique des Trains (ATP) en C++ :</strong> Implémentation d'une bibliothèque de tests en C++ pour le système critique ATP et rédaction des protocoles formels de validation.</li>
+            <li><strong>Automatisation de Tests en Python :</strong> Conception et déploiement d'un outillage propriétaire en Python automatisant l'exécution et le reporting des campagnes de validation.</li>
+            <li><strong>Déploiements Constructeur :</strong> Interventions et alignement technique sur le site constructeur CAF au Pays Basque.</li>
+          </ul>
+        </div>
+
+        <!-- 3. INETUM -->
+        <div class="ms-timeline-item">
+          <div class="ms-timeline-dot"></div>
+          <div class="ms-timeline-date">DÉCEMBRE 2020 — AOÛT 2021</div>
+          <h3 class="ms-timeline-title">Ingénieur Test & Validation</h3>
+          <div class="ms-timeline-company">Inetum — Lisbonne (Portugal)</div>
+          <ul class="ms-timeline-duties">
+            <li><strong>Qualification Web & IHM :</strong> Élaboration et exécution de plans de tests pour la validation fonctionnelle d'applications web et d'interfaces utilisateurs.</li>
+            <li><strong>Support Technique & Données :</strong> Diagnostic, investigation et correction de dysfonctionnements sur serveurs de bases de données relationnelles.</li>
+          </ul>
+        </div>
+
+        <!-- 4. BERTRANDT -->
+        <div class="ms-timeline-item">
+          <div class="ms-timeline-dot"></div>
+          <div class="ms-timeline-date">JUIN 2018 — OCTOBRE 2019</div>
+          <h3 class="ms-timeline-title">Ingénieur Contrôle-Commande | Responsable Régulation Débit d'Air Moteur</h3>
+          <div class="ms-timeline-company">Bertrandt — Toulouse (France)</div>
+          <ul class="ms-timeline-duties">
+            <li><strong>Algorithme Flex Fuel :</strong> Conception d'un algorithme d'estimation du taux d'éthanol par fusion multi-capteurs (réservoir et injecteurs).</li>
+            <li><strong>Responsable Composant Core (Gestion d'Air) :</strong> Diagnostic de failles logicielles, résolution par correctifs software et recalibration.</li>
+            <li><strong>Automatisation Simulink :</strong> Outil interne traçant automatiquement l'architecture multicœur sur Simulink directement depuis le code logiciel embarqué.</li>
+            <li><strong>Outillage de Banc :</strong> Création d'outils de dépouillement de données de tests banc et véhicule pour isoler les anomalies logicielles multicœurs.</li>
+          </ul>
+        </div>
+
+        <!-- 5. ASSYSTEM -->
+        <div class="ms-timeline-item">
+          <div class="ms-timeline-dot"></div>
+          <div class="ms-timeline-date">MARS 2016 — JANVIER 2018</div>
+          <h3 class="ms-timeline-title">Ingénieur Conception et Validation Contrôle Moteur</h3>
+          <div class="ms-timeline-company">Assystem — Paris (France)</div>
+          <ul class="ms-timeline-duties">
+            <li><strong>Algorithme de Niveau d'Huile :</strong> Logique avancée d'estimation de la masse d'huile moteur/carter par fusion de signaux d'un capteur ultrason.</li>
+            <li><strong>Bancs HIL & Véhicules Prototypes :</strong> Validation fonctionnelle des modèles Simulink et des exigences sur bancs Hardware-In-the-Loop (HIL) et prototypes piste.</li>
+          </ul>
+        </div>
+
+        <!-- 6. SET-WAY & SKF -->
+        <div class="ms-timeline-item">
+          <div class="ms-timeline-dot"></div>
+          <div class="ms-timeline-date">2014 — 2016</div>
+          <h3 class="ms-timeline-title">Ingénieur Calibration Moteur</h3>
+          <div class="ms-timeline-company">Set-way — Paris (France) </div>
+          <ul class="ms-timeline-duties">
+            <li><strong>Calibration & Optimisation (Essence) :</strong> Réglage et optimisation desparamètres moteurs et véhicules sur des projets de motorisation Essence.</li>
+            <li><strong>Rédaction de Méthodologies : </strong> Élaboration de méthodologies decalibration structurées, basées sur le référentiel et les spécifi cationsRenault.</li>
+          </ul>
+        </div>
+      </div>
+
+      
+        <!-- 7. SKF -->
+        <div class="ms-timeline-item">
+          <div class="ms-timeline-dot"></div>
+          <div class="ms-timeline-date">2014 — 2016</div>
+          <h3 class="ms-timeline-title">Stage en Automatique Avancée (Commande CRONE)</h3>
+          <div class="ms-timeline-company">SKF (Vernon)</div>
+          <ul class="ms-timeline-duties">
+            <li>Synthèse d'une loi de commande CRONE d'ordre non entier pour l'isolation vibratoire d'un rotor sur palier magnétique actif.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SOCLE ACADÉMIQUE -->
+      <div style="margin-top: 70px;">
+        <div class="ms-badge">Socle Académique</div>
+        <h3 style="font-size: 1.8rem; margin-bottom: 24px;">Diplômes & Formations d'Excellence</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px;">
+            <div style="color: var(--accent-cyan); font-family: var(--font-code); font-size: 0.85rem; font-weight: 700;">2025 — 2026</div>
+            <h4 style="font-size: 1.25rem; margin: 8px 0;">Certificat de Spécialisation en IA</h4>
+            <div style="color: var(--text-secondary); font-size: 0.95rem;">CNAM Paris</div>
+            <p style="font-size: 0.9rem; color: #94a3b8; margin-top: 8px;">
+              Computer Vision, Réseaux antagonistes conditionnels (cGAN), Détection et suivi multi-objets (YOLO, DeepSORT).
+            </p>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px;">
+            <div style="color: var(--accent-indigo); font-family: var(--font-code); font-size: 0.85rem; font-weight: 700;">2010 — 2014</div>
+            <h4 style="font-size: 1.25rem; margin: 8px 0;">Diplôme d'Ingénieur d'État</h4>
+            <div style="color: var(--text-secondary); font-size: 0.95rem;">ENSEIRB-MATMECA, Bordeaux</div>
+            <p style="font-size: 0.9rem; color: #94a3b8; margin-top: 8px;">
+              Majeure Électronique & Automatique : Commande robuste, traitement du signal, architectures matérielles, temps réel.
+            </p>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px;">
+            <div style="color: var(--accent-emerald); font-family: var(--font-code); font-size: 0.85rem; font-weight: 700;">2011</div>
+            <h4 style="font-size: 1.25rem; margin: 8px 0;">Échange Universitaire BRAFITEC</h4>
+            <div style="color: var(--text-secondary); font-size: 0.95rem;">UFRGS, Porto Alegre (Brésil)</div>
+            <p style="font-size: 0.9rem; color: #94a3b8; margin-top: 8px;">
+              Programme d'excellence d'ingénierie internationale : immersion bilingue, maîtrise opérationnelle du portugais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. SECTION CONTACT
+       ======================================================================== -->
+  <section id="contact" class="ms-section">
+    <div class="ms-container">
+      <div class="ms-badge">Opportunités & Échanges</div>
+      <h2 class="ms-section-title">Initiations de Projets & Prise de Contact</h2>
+      <p class="ms-section-subtitle">
+        Vous pilotez un programme critique nécessitant une méthodologie MBSE sans faille, vous développez des briques d'IA ou du logiciel embarqué? Échangeons sur vos enjeux.
+      </p>
+
+      <div class="ms-contact-wrapper">
+        <!-- COORDONNÉES DIRECTES -->
+        <div>
+          <h3 style="font-size: 1.8rem; margin-bottom: 16px;">Coordonnées Directes</h3>
+          <p style="color: #cbd5e1; margin-bottom: 32px;">
+            Disponible pour des missions d'architecture systèmes complexes, de cadrage MBSE ou des projets d'ingénierie en Vision par Ordinateur & IA.
+          </p>
+
+          <!-- Email -->
+          <div class="ms-contact-row">
+            <div class="ms-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div>
+              <div class="ms-contact-label">Email Professionnel</div>
+              <a href="mailto:medsmires@outlook.com" class="ms-contact-val" style="color: var(--text-primary);">medsmires@outlook.com</a>
+            </div>
+          </div>
+
+          <!-- Téléphone -->
+          <div class="ms-contact-row">
+            <div class="ms-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div>
+              <div class="ms-contact-label">Téléphone Direct</div>
+              <a href="tel:+33650629473" class="ms-contact-val" style="color: var(--text-primary);">+33 (0)6 50 62 94 73</a>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="ms-contact-row">
+            <div class="ms-contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <div>
+              <div class="ms-contact-label">Profil LinkedIn</div>
+              <a href="https://linkedin.com/in/smires" target="_blank" rel="noopener noreferrer" class="ms-contact-val" style="color: var(--accent-cyan);">linkedin.com/in/smires</a>
+            </div>
+          </div>
+
+          <!-- CV CTA -->
+          <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border-subtle);">
+            <a href="assets/docs/CV_Mohammed_Smires.pdf" class="ms-btn ms-btn-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Télécharger le CV complet (Format PDF)
+            </a>
+          </div>
+        </div>
+
+        <!-- FORMULAIRE RAPIDE -->
+        <div>
+          <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Envoyer un Message Direct</h3>
+          <form id="ms-contact-form">
+            <div class="ms-form-group">
+              <label for="form-name" style="display:block; font-size:0.85rem; color:var(--text-secondary); margin-bottom:6px; font-family:var(--font-code);">Votre Nom & Prénom *</label>
+              <input type="text" id="form-name" class="ms-input" placeholder="Ex: Jean Dupont" required>
+            </div>
+
+            <div class="ms-form-group">
+              <label for="form-email" style="display:block; font-size:0.85rem; color:var(--text-secondary); margin-bottom:6px; font-family:var(--font-code);">Adresse Email Professionnelle *</label>
+              <input type="email" id="form-email" class="ms-input" placeholder="Ex: j.dupont@groupe.com" required>
+            </div>
+
+            <div class="ms-form-group">
+              <label for="form-company" style="display:block; font-size:0.85rem; color:var(--text-secondary); margin-bottom:6px; font-family:var(--font-code);">Entreprise / Organisation</label>
+              <input type="text" id="form-company" class="ms-input" placeholder="Ex: Thales, Safran, Alstom...">
+            </div>
+
+            <div class="ms-form-group">
+              <label for="form-subject" style="display:block; font-size:0.85rem; color:var(--text-secondary); margin-bottom:6px; font-family:var(--font-code);">Objet de la Demande</label>
+              <select id="form-subject" class="ms-input">
+                <option value="Opportunité de Recrutement">Opportunité de recrutement (CDI / Mission)</option>
+                <option value="Projet Architecture MBSE">Projet d'Architecture Systèmes & MBSE</option>
+                <option value="Ingénierie IA & Vision">Développement & Prototypage IA / Vision</option>
+                <option value="Autre Demande">Autre échange technique</option>
+              </select>
+            </div>
+
+            <div class="ms-form-group">
+              <label for="form-message" style="display:block; font-size:0.85rem; color:var(--text-secondary); margin-bottom:6px; font-family:var(--font-code);">Votre Message *</label>
+              <textarea id="form-message" class="ms-textarea" rows="4" placeholder="Décrivez succinctement vos enjeux ou attentes..." required></textarea>
+            </div>
+
+            <button type="submit" class="ms-btn ms-btn-primary" style="width: 100%; margin-top: 8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              Transmettre le Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. PIED DE PAGE (FOOTER)
+       ======================================================================== -->
+  <footer class="ms-footer">
+    <div class="ms-container">
+      <p style="margin-bottom: 6px;">
+        © 2026 Mohammed Smirès — Architecte Systèmes & Spécialiste IA. Tous droits réservés.
+      </p>
+      <p style="font-size: 0.82rem; color: var(--text-muted);">
+        Conçu avec une architecture moderne Vanilla HTML5/CSS3/JS • Hébergé sur GitHub Pages.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
