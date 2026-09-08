@@ -746,7 +746,155 @@ a:hover {
   font-size: 0.9rem;
 }
 
-/* Mobile Nav Drawer */
+/* --------------------------------------------------------------------------
+   12. SÉLECTEUR DE LANGUE & MENU CV BILINGUE
+   -------------------------------------------------------------------------- */
+.ms-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ms-lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(11, 19, 41, 0.85);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 3px;
+  gap: 2px;
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: var(--glass-blur);
+}
+
+.ms-lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  padding: 5px 11px;
+  font-family: var(--font-code);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.ms-lang-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.ms-lang-btn.active {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.28) 0%, rgba(99, 102, 241, 0.28) 100%);
+  color: #ffffff;
+  border-color: var(--border-active);
+  box-shadow: 0 0 14px var(--accent-cyan-glow);
+}
+
+.ms-flag-icon {
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* Dropdown CV dans la navbar */
+.ms-cv-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.ms-cv-dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.ms-cv-chevron {
+  transition: transform 0.25s ease;
+}
+
+.ms-cv-dropdown.open .ms-cv-chevron,
+.ms-cv-dropdown:hover .ms-cv-chevron {
+  transform: rotate(180deg);
+}
+
+.ms-cv-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 220px;
+  background: rgba(11, 19, 41, 0.96);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 8px;
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 1100;
+}
+
+.ms-cv-dropdown.open .ms-cv-menu,
+.ms-cv-dropdown:hover .ms-cv-menu {
+  display: flex;
+  animation: msDropdownFade 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes msDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ms-cv-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--text-primary) !important;
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.ms-cv-menu-item:hover {
+  background: rgba(14, 165, 233, 0.12);
+  color: var(--accent-cyan-light) !important;
+  transform: translateX(3px);
+}
+
+.ms-btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.ms-contact-cv-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Mobile Nav Drawer & Responsive */
 @media (max-width: 820px) {
   .ms-nav-links {
     position: fixed;
@@ -768,4 +916,22 @@ a:hover {
   .ms-burger {
     display: flex;
   }
+  .ms-nav-cv-wrapper {
+    width: 100%;
+  }
+  .ms-cv-dropdown {
+    width: 100%;
+  }
+  .ms-cv-dropdown-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+  .ms-cv-menu {
+    position: static;
+    display: flex;
+    box-shadow: none;
+    background: rgba(16, 28, 61, 0.6);
+    margin-top: 6px;
+  }
 }
+
