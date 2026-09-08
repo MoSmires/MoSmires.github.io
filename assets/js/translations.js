@@ -36,8 +36,8 @@ const translations = {
     kpi_mota_lbl: "Gain MOTA sur Benchmark MOT20",
     kpi_mbse_val: "100%",
     kpi_mbse_lbl: "Conformité & Traçabilité MBSE",
-    kpi_lang_val: "3",
-    kpi_lang_lbl: "Langues de Travail (FR, EN, PT)",
+    kpi_lang_val: "2",
+    kpi_lang_lbl: "Langues de Travail (FR, EN)",
 
     // Section Expertise
     exp_badge: "Double Compétence Rare",
